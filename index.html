@@ -2,41 +2,63 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"
-  <title>Red River Gorge</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Red River Gorge Quiz</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
 </head>
 
 <body>
 
-<div id="container">
+<div class="container">
   <div class="row">
-    <div class="col-[breakpoint]-[columns]">
+    <div class="col-md-8">
       <form>
+
+
         <h1>Red River Gorge Quiz</h1>
 
         <p>This quiz will test your knowledge about Red River Gorge, based on information from a <a href="https://en.wikipedia.org/wiki/Red_River_Gorge">Wikipedia article</a>.</p>
 
-        <label for="state">What state is Red River Gorge located in?</label>
-        <input type="text" name="state" id="state">
+      <div class="form-group">
+        <label class="form-control-label" for="state">What state is Red River Gorge located in?</label>
+        <input class="form-control" type="text" name="state" id="state">
+      </div><!--form-group-->
 
-        <label for="forest">What national forest is Red River Gorge located in?</label> <input type="text" name="forest" id="forest">
+      <div class="form-group">
+        <label class="form-control-label" for="forest">What national forest is Red River Gorge located in?</label> <input class="form-control" type="text" name="forest" id="forest">
+      </div><!--form-group-->
 
-        <label for="death">How did a man die in the Nada Tunnel at Red River Gorge?</label> <textarea name="death" id="death"></textarea>
+      <div class="form-group">
+        <label class="form-control-label" for="death">How did a man die in the Nada Tunnel at Red River Gorge?</label> <textarea class="form-control" name="death" id="death"></textarea>
+      </div><!--form-group-->
 
+      <div class="form-group">
         <label>What is Red River Gorge's nickname among climbers?</label>
-              <label><input type="radio" name="nickname" value="clifford"> Clifford the Big Red Dog</label>
-              <label><input type="radio" name="nickname" value="gorgey"> Good Ole' Gorgey Gorge</label>
-              <label><input type="radio" name="nickname" value="red"> The Red</label>
-              <label><input type="radio" name="nickname" value="gorgeous"> The Gorgeous Gorge</label>
+        <div class="form-check">
+              <label class="form-check-label"><input class="form-check-input" type="radio" name="nickname" value="clifford"> Clifford the Big Red Dog</label></div>
+        <div class="form-check">
+              <label class="form-check-label"><input class="form-check-input" type="radio" name="nickname" value="gorgey"> Good Ole' Gorgey Gorge</label></div>
+        <div class="form-check">
+              <label class="form-check-label"><input class="form-check-input" type="radio" name="nickname" value="red"> The Red</label></div>
+        <div class="form-check">
+              <label class="form-check-label"><input class="form-check-input" type="radio" name="nickname" value="gorgeous"> The Gorgeous Gorge</label></div>
+     </div><!--form-group-->
 
+     <div class="form-group">
         <label>Which of the following venemous snakes can be found at Red River Gorge?</label>
-               <label><input type="checkbox" name="snakes" value="copperhead"> The copperhead</label>
-               <label><input type="checkbox" name="snakes" value="cobra"> The King cobra</label>
-               <label><input type="checkbox" name="snakes" value="rattlesnake"> The Timber rattlesnake</label>
-              <label><input type="checkbox" name="snakes" value="mamba"> The black mamba</label>
+        <div class="form-check">
+               <label class="form-check-label"><input class="form-check-input" type="checkbox" name="snakes" value="copperhead"> The copperhead</label></div>
+        <div class="form-check">
+               <label class="form-check-label"><input class="form-check-input" type="checkbox" name="snakes" value="cobra"> The King cobra</label></div>
+        <div class="form-check">
+               <label class="form-check-label"><input class="form-check-input" type="checkbox" name="snakes" value="rattlesnake"> The Timber rattlesnake</label></div>
+        <div class="form-check">
+              <label class="form-check-label"><input class="form-check-input" type="checkbox" name="snakes" value="mamba"> The black mamba</label></div>
+     </div><!--form-group-->
 
-      <label>Which state park is located adjacent to Red River Gorge?</label>
-        <select name="statepark">
+     <div class="form-group">
+      <label class="form-control-label">Which state park is located adjacent to Red River Gorge?</label>
+        <select class="form-control" name="statepark">
           <option value="CCSP">Carr Creek State Park</option>
           <option value="JJASP">John James Audubon State Park</option>
           <option value="NBSP">Natural Bridge State Park</option>
@@ -44,9 +66,11 @@
           <option value="MMSP">Mineral Mound State Park</option>
           <option value="GLSP">Grayson Lake State Park</option>
         </select>
+      </div><!--form-group-->
 
-    <input type="submit" value="Submit Quiz"> <input type="reset" value="Start Over">
-
+    <div class="form-group">
+    <input class="btn btn-primary" type="submit" value="Submit Quiz"> <input class="btn btn-secondary" type="reset" value="Start Over">
+    </div><!--form-group-->
 
       </form>
     </div> <!--column-->
